@@ -763,7 +763,7 @@ input:disabled + .slider:before {
 .slider1-next {
 	position: absolute;
 	top: 50%;
-	transform: translateY(-40%);
+	transform: translateY(-50%);
 	right: 0;
 	z-index: 5;
 
@@ -771,7 +771,7 @@ input:disabled + .slider:before {
 }
 
 .slider1-prev img,
-.slider2-prev img {
+.slider1-next img {
 	width: 16px;
 	height: 26px;
 }
