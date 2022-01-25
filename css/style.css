@@ -50,15 +50,6 @@ select:focus {
 	outline: 1px solid var(--secondary);
 }
 
-/*input::placeholder {
-	font-weight: 300;
-	font-style: italic;
-}
-
-input:focus::placeholder {
-	color: transparent;
-}*/
-
 .wrapper {
 	overflow: hidden;
 }
@@ -537,6 +528,11 @@ input:disabled + .slider:before {
 	padding-right: 20px;
 }
 
+.dash-weather__img img {
+	width: 130px;
+	height: 100px;
+}
+
 /*----------------dashboard---wifi-card*/
 .dash-wifi__status {
 	font-weight: 700;
@@ -772,6 +768,12 @@ input:disabled + .slider:before {
 	z-index: 5;
 
 	padding-right: 24px;
+}
+
+.slider1-prev img,
+.slider2-prev img {
+	width: 16px;
+	height: 26px;
 }
 
 #movies-slider-next, #movies-slider-prev {
@@ -1191,6 +1193,11 @@ input:disabled + .slider:before {
 	background-color: var(--secondary-low);
 }
 
+.rating__stars > * {
+	height: 18px;
+	width: 18px;
+}
+
 .device__TV__tonights-choice__film {
 	display: flex;
 	align-items: center;
@@ -1566,6 +1573,7 @@ input:checked + .slider.lights {
 
 .heat-sources__weather__img {
 	width: 100px;
+	height: 75px;
 
 	margin: 0 auto;
 }
