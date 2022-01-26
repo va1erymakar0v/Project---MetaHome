@@ -83,8 +83,13 @@ const setTime = () => {
 	let days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 	let months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
-	headerDate.innerHTML = days[date.getDay()] + ', ' + date.getDate() + ' ' + months[date.getMonth()];
-	headerYear.innerHTML = ', ' + date.getFullYear();
+	if (document.documentElement.scrollWidth < 531) {
+		headerDate.innerHTML = days[date.getDay()].substr(0, 3) + ', ' + date.getDate() + ' ' + months[date.getMonth()].substr(0, 3);
+		headerYear.innerHTML = ', ' + date.getFullYear();
+	} else {
+		headerDate.innerHTML = days[date.getDay()] + ', ' + date.getDate() + ' ' + months[date.getMonth()];
+		headerYear.innerHTML = ', ' + date.getFullYear();
+	}
 }
 
 setTime();
@@ -1444,5 +1449,3 @@ lightTheme.onclick = function() {
 
 
 
-
-// -------------------------------------------------------------NAVIGATION
