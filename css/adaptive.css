@@ -121,7 +121,7 @@
 	.header__container {
 		width: var(--content-minimal);
 
-		grid-template-columns: 5% 10.6% 26.9% 18.3% 27.2% 12%;
+		grid-template-columns: 5% 10.6% 31.9% 13.3% 32.2% 7%;
 	}
 
 	.header__logo-mini {
@@ -173,6 +173,13 @@
 		width: 50px;
 
 		padding: 0;
+	}
+
+	.users__menu__item > *:not(:first-child) {
+		margin-top: 6px;
+	}
+	.header__add-user {
+		margin-left: 8px;
 	}
 
 	.users__arrow,
