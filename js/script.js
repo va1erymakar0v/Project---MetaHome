@@ -93,7 +93,7 @@ const setTime = () => {
 }
 
 setTime();
-setInterval(() => { setTime() }, 30000);
+setInterval(() => { setTime() }, 10000);
 
 // -----------------------------------------------------------------------USERS-MENU
 
@@ -577,8 +577,8 @@ leavingRegimeCheckbox.onchange = function() {
 		}
 		bulbOn(hallLights[0]);
 		bulbOn(hallLights[1]);
+		checkboxOff(leavingRegimeCheckbox);
 	} 
-	checkboxOff(leavingRegimeCheckbox);
 }
 
 // cooking regime
@@ -592,8 +592,8 @@ cookingRegimeCheckbox.onchange = function() {
 		 	bulbOn(kitchenLights[i]);	
 		}
 		bulbOn(livingroomLights[4]);
+		checkboxOff(cookingRegimeCheckbox);
 	} 
-	checkboxOff(cookingRegimeCheckbox);
 }
 
 // dinner regime
@@ -608,8 +608,8 @@ dinnerRegimeCheckbox.onchange = function() {
 		}
 		bulbOn(kitchenLights[0]);
 		bulbOn(kitchenLights[2]);
+		checkboxOff(dinnerRegimeCheckbox);
 	} 
-	checkboxOff(dinnerRegimeCheckbox);
 }
 
 // meeting regime
@@ -626,8 +626,8 @@ meetingRegimeCheckbox.onchange = function() {
 		bulbOn(bathroomLights[2]);
 		bulbOn(livingroomLights[1]);
 		bulbOn(livingroomLights[2]);
+		checkboxOff(meetingRegimeCheckbox);
 	} 
-	checkboxOff(meetingRegimeCheckbox);
 }
 
 
@@ -1446,6 +1446,3 @@ lightTheme.onclick = function() {
 		container.classList.toggle('dark-theme');
 	}
 }
-
-
-
