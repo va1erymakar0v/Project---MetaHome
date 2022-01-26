@@ -147,7 +147,7 @@
 @media (max-width: 727px) {
 	.header__container {
 		display: grid;
-		grid-template-columns: 9.55% 15.24% 50.05% 11.28% 13.81%;
+		grid-template-columns: 14.55% 15.24% 35.05% 21.28% 13.81%;
 
 		width: 100%;
 		max-width: 488px;
@@ -269,7 +269,7 @@
 	}
 
 	.dash-movies-card {
-		width: 360px;
+		width: 330px;
  		height: 310px;
 	}
  
@@ -279,7 +279,7 @@
 
  	.content__title {
  		top: 20%;
-	  left: 0;
+	  	left: 0;
 
  		width: 100%;
  		text-align: center;
@@ -294,12 +294,12 @@
  		flex-direction: column;
  		justify-content: center;
 
- 		width: 360px;
+ 		width: 330px;
  		height: 310px;
 
  		text-align: center;	
 
- 		padding: 0 60px;
+ 		padding: 0 0px;
  	}
 
  	.movie__rating {
@@ -609,8 +609,14 @@
 }
 
 @media (max-width: 727px) {
+	.wifi .card {
+		width: 314px;
+	}
+
 	.card.wifi-users {
 		height: 100%;
+
+		padding: 30px 10px;
 	}
 
 	.wifi-user > * {
@@ -674,11 +680,3 @@
 		height: 175px;
 	}
 }
-
-
-
-
-
-
-
-
