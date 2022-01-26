@@ -2,18 +2,8 @@
   --primary: #E7ECEF;
   --secondary: #274C77;
   --half-secondary: #516F91;
-  --secondary-low: #879CB3;
-  --boxes: #F8F8FB;
-  --cold: #00B2FF;
-  --hot: #FF7A00;
-  --bad: #9B4343;
-  --good: #439B57;
 
-  --big-shadow: -7px 7px 12px 1px rgba(34, 60, 80, 0.2);
-  --small-shadow: 0 4px 4px rgba(0,0,0,0.25);
-
-  --content-minimal: 690px;
-  --height-maximal: 840px;
+  --newboxes:  #ddddff;
 }
 
 
@@ -62,15 +52,15 @@
 }
 
 .dark-theme .card {
-	background-color: #ddddff;
+	background-color: var(--newboxes);
 }
 
 .dark-theme .menu__link {	
-	color: #ddddff;
+	color: var(--newboxes);
 }
 
 .dark-theme .menu__link.active {
-	background-color: #ddddff;
+	background-color: var(--newboxes);
 	color: var(--secondary);
 }
 .dark-theme .menu__link .menu__icon_active {
@@ -99,7 +89,7 @@
 	background-color: var(--secondary);
 }
 .dark-theme .card.dark-theme .card.theme-example {
-	background-color: #ddddff;
+	background-color: var(--newboxes);
 }
 
 .dark-theme .card.dark-theme {
